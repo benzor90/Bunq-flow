@@ -6,7 +6,7 @@ body{
 	margin: 0;
 }
 
-.container{
+.container-wrapper{
 	width: 100%;
 	height: auto;
 	overflow: hidden;
@@ -34,6 +34,20 @@ h6{
 
 p{
 	font-size: 18px;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.btn-prim {
+	font-size: 30px;
+	padding: 10px 50px;
+	text-decoration: none;
+	background-color: #fff;
+	border-radius: 50px;
+	font-weight: bold;
+	color: #792cd1;
 }
 
 .btn{
@@ -261,15 +275,7 @@ header{
 	margin-bottom: 55px;
 }
 
-.caption a {
-	font-size: 30px;
-	padding: 10px 50px;
-	text-decoration: none;
-	background-color: #fff;
-	border-radius: 50px;
-	font-weight: bold;
 
-}
 
 @media only screen and (min-width: 780px) {
 	.caption {
@@ -319,6 +325,153 @@ header{
 		
 	}
 }
+
+	#myModal .close {
+		margin: 20px;
+	}
+
+	.modal-open .modal {
+		background-image: linear-gradient(-45deg, #FF2D7F 0%, #942BC8 100%);
+	}
+
+	.modal-content {
+		background: none;
+		border: none;
+	}
+
+	.modal-body {
+		text-align: center;
+		color: #fff;
+	}
+
+	#smart-transfer {
+		color :#fff;
+	}
+
+	#smart-transfer h1 {
+		font-size: 32px;
+	}
+	
+
+	#smart-transfer small {
+		font-size: 16px;
+		color: #FFFFFF !important;
+		line-height: 20px;
+	}
+
+	.form-group .amount{
+		position: relative;
+	}
+
+	.form-group .amount:after {
+		
+		position: absolute;
+    	content: '&euro;';
+	}
+
+	#smart-transfer .amount{
+	padding-left: 45px;
+	}
+
+
+	
+
+
+
+	#smart-transfer .button-group {
+		text-align: center;
+	}
+
+	#smart-transfer .button-group .btn-prim {
+		font-size: 16px;
+		margin-top: 50px;
+		background-color: rgba(255, 255, 255, 0.3);
+		border: none;
+		color: #EF2D8B;
+	}
+
+	#smart-transfer .modal-body {
+		padding: 0 0 0 20px
+	}
+
+	#smart-transfer input {
+		background: transparent;
+		color: #fff;
+		padding: 10px;
+		border-color: #fff;
+	}
+
+	#smart-transfer input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	  color:rgba(255, 255, 255, 0.5);
+	}
+	#smart-transfer input::-moz-placeholder { /* Firefox 19+ */
+	  color: rgba(255, 255, 255, 0.5);
+	}
+	#smart-transfer input:-ms-input-placeholder { /* IE 10+ */
+	  color: rgba(255, 255, 255, 0.5);
+	}
+	#smart-transfer input:-moz-placeholder { /* Firefox 18- */
+	  color: rgba(255, 255, 255, 0.5);
+	}
+
+	#smart-transfer select {
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		-o-appearance: none;
+		-ms-appearance: none;
+		appearance: none;
+		border-radius: 0;
+		border: 0;
+		margin: 0;
+		padding: 0;
+		background: none transparent;
+		vertical-align: middle;
+		font-size: inherit;
+		color: inherit;
+		box-sizing: content-box;
+		outline: none;
+	}
+
+	#smart-transfer .custom {
+	  overflow: hidden;
+	  display: block;
+	  position: relative;
+	  border-radius: 0.2em;
+	  border: 1px solid #fff;
+	  background-color: transparent;
+	}
+	#smart-transfer .custom > select {
+	  width: 100%;
+	  padding: 10px;
+	  font-size: 1rem;
+	}
+	#smart-transfer .custom:after {
+	  position: absolute;
+	  top: 0;
+	  bottom: 0;
+	  right: 0;
+	  width: 1.8em;
+	  display: block;
+	  content: "";
+	  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAGFBMVEUAAAAZJCYWISIYIyQYIiUWIiIYIyQYIiXh0rToAAAACHRSTlMA/hTRqiinvwFkb0sAAABCSURBVHjajchBDsAgDAPBOJDw/x+XVN0icQGfPGs3i+2GEqeiLCXWLENzvdzrDfP2ls/NjfKbgimYglfBq2Dm+LwHguMA235EdKYAAAAASUVORK5CYII=") center no-repeat;
+	  pointer-events: none;
+	}
+	#smart-transfer .default .custom > select {
+	  width: auto;
+	}
+	#smart-transfer .custom {
+	  overflow: visible;
+	}
+	/*#smart-transfer .overflow .custom select {
+	  outline: 2px dotted rgba(255, 255, 0, 0.5);
+	}*/
+
+
+	
+
+
+
+
 
 
 .arrow-box{
@@ -702,4 +855,9 @@ footer .logo .light{
 		width: auto;
 		float: none;
 	}
+}
+
+
+.arrow-box.a-element.fadeIn {
+	display: none;
 }
