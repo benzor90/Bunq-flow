@@ -1,8 +1,10 @@
 /* Resets */
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
 
 body{
 	color: #777;
-	font-family: 'Quicksand', sans-serif;
+	font-family: 'Nunito Sans', sans-serif;
+
 	margin: 0;
 }
 
@@ -32,12 +34,12 @@ h6{
 	font-size: 20px;
 }
 
-p{
+p {
 	font-size: 18px;
 }
 
 a {
-	outline: none;
+	outline: none !important;
 }
 
 a:hover {
@@ -71,6 +73,14 @@ a:hover {
 	color: white;
 }
 
+.no-outline {
+	cursor: pointer;
+}
+
+.no-outline:hover {
+	outline: none;
+}
+
 .btn span{
 	transform: translateX(0);
 	transition: all .5s ease;
@@ -90,16 +100,12 @@ header{
 
 .logo{
 	display: inline-block;
-	color: white;
-	text-decoration: none;
 	margin: 30px;
-	border-left: 2px solid rgba(255,255,255,.5);
-	border-right: 2px solid rgba(255,255,255,.5);
-	border-bottom: 2px solid rgba(255,255,255,.5);
 	padding: 5px 10px;
-	border-bottom-left-radius: 2px;
-	border-bottom-right-radius: 2px;
-	letter-spacing: 1px;
+}
+
+.logo img {
+	width: 30px;
 }
 
 .logo .light{
@@ -250,7 +256,7 @@ header{
 
 .heading-visual img {
 	width: 400px;
-	margin-bottom: -150px;
+	margin-bottom: -240px;
 	margin-right: 150px;
 }
 
@@ -311,9 +317,9 @@ header{
 	}
 
 	.caption h1 {
+		padding: 0 20px;
 		line-height: 30px;
 		font-size: 25px;
-
 	}
 
 	.caption p {
