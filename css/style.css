@@ -1,5 +1,5 @@
 /* Resets */
-@import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,700,800,900');
 
 body{
 	color: #777;
@@ -47,7 +47,7 @@ a:hover {
 }
 
 .btn-prim {
-	font-size: 30px;
+	font-size: 26px;
 	padding: 10px 50px;
 	text-decoration: none;
 	background-color: #fff;
@@ -236,11 +236,12 @@ header{
 	width: 100%;
 	left:0;
 	top: 0;
-	background: #792cd1;
-	background: -moz-linear-gradient(-45deg, #792cd1 0%, #7b24aa 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(-45deg, #792cd1 0%,#7b24aa 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(135deg, #792cd1 0%,#7b24aa 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#792cd1', endColorstr='#7b24aa',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#792cd1+0,7b24aa+100 */
+background: #792cd1; /* Old browsers */
+background: -moz-linear-gradient(-45deg, #792cd1 0%, #7b24aa 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, #792cd1 0%,#7b24aa 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, #792cd1 0%,#7b24aa 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#792cd1', endColorstr='#7b24aa',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 	z-index: 3;
 }
 
@@ -286,15 +287,16 @@ header{
 }
 
 .caption h1 {
-	font-weight: bold;
+	font-weight: 700;
 	font-size: 65px;
 	margin-bottom: 30px;
-	line-height: 60px;
+	line-height: 68px;
 }
 
 .caption p {
 	font-size: 25px;
 	margin-bottom: 55px;
+	line-height: 34px;
 }
 
 @media only screen and (min-width: 780px) {
