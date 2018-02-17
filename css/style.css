@@ -153,7 +153,7 @@ header{
 .button:hover::before, .button.turn::before{
 	transform: rotate(90deg);
 	margin-top: -1px;
-} 
+}
 
 .button:hover::after, .button.turn::after {
 	transform: rotate(0deg);
@@ -212,6 +212,11 @@ header{
 */	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
+}
+
+.wrapper .svg-background {
+	position: relative;
+	z-index: 4;
 }
 
 .wrapper::after{
@@ -302,7 +307,7 @@ header{
 	.caption {
 	    position: relative;
 	    text-align: center;
-	    width: 85%; 
+	    width: 85%;
 	    top: auto;
 	    transform: none;
 	    left: auto;
@@ -322,7 +327,7 @@ header{
 
 	.caption a {
 		font-size: 22px;
-		
+
 	}
 }
 
@@ -829,22 +834,22 @@ footer .logo .light{
 	.wrapper iframe{
 		display: none;
 	}
-	
+
 	.wrapper{
 		background-repeat: no-repeat;
 		background-position: center;
 	}
-	
+
 	.half{
 		width: auto;
 		float: none;
 		text-align: center;
 	}
-	
+
 	.half:last-child{
 		text-align: center;
 	}
-	
+
 	.services .quarter{
 		width: 50%;
 	}
