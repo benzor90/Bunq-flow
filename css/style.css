@@ -36,6 +36,10 @@ p{
 	font-size: 18px;
 }
 
+a {
+	outline: none;
+}
+
 a:hover {
 	text-decoration: none;
 }
@@ -242,14 +246,21 @@ header{
     top: 50%;
     transform: translateY(-50%);
     right: 50%;
-    width: 50%;
 }
 
 .heading-visual img {
-	width: 80%;
-	height: 400px;
-	background: black;
+	width: 400px;
+	margin-bottom: -150px;
+	margin-right: 150px;
 }
+
+@media only screen and (max-width: 780px) {
+	.heading-visual img {
+
+	}
+}
+
+
 
 .caption{
 	position: absolute;
@@ -280,39 +291,23 @@ header{
 	margin-bottom: 55px;
 }
 
-
-
 @media only screen and (min-width: 780px) {
 	.caption {
 		padding-right: 75px;
 	}
 }
 
-@media only screen and (max-width: 779px) {
-	.heading-visual {
-	    position: relative;
-	    text-align: center;
-	    top: auto;
-    	transform: none;
-    	right: auto;
-	    width: 100%;
-	    margin-top:150px;
-	}
-
-	.heading-visual img {
-		height: 100px;
-	}
-
-
+@media only screen and (max-width: 910px) {
 	.caption {
-	    position: relative;
+	    position: absolute;
+	    width: 55%;
 	    text-align: center;
-	    width: 85%;
-	    top: auto;
-	    transform: none;
-	    left: auto;
-	    margin: 0 auto;
+	    color: white;
+	    z-index: 5;
+	    top: 30% !important;
 	    padding: 0;
+	    left: 36%;
+	    transform: none;
 	}
 
 	.caption h1 {
@@ -323,11 +318,34 @@ header{
 
 	.caption p {
 		font-size: 18px;
+		padding: 0 40px;
 	}
 
 	.caption a {
 		font-size: 22px;
 
+	}
+}
+
+@media only screen and (max-width: 620px) {
+	.caption {
+		    position: absolute;
+		    width: 100%;
+		    text-align: center;
+		    color: white;
+		    z-index: 5;
+		    top: 25% !important;
+		    padding: 0;
+		    left: auto;
+		    transform: none;
+	}
+
+	.caption p {
+		padding: 0 20px;
+	}
+
+	.heading-visual {
+		display: none;
 	}
 }
 
