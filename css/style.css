@@ -77,7 +77,8 @@ a:hover {
 	cursor: pointer;
 }
 
-.no-outline:hover {
+.no-outline:hover,
+.no-outline:focus {
 	outline: none;
 }
 
@@ -431,6 +432,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#792cd1', end
 		color: #fff;
 		padding: 10px;
 		border-color: #fff;
+	}
+
+	#smart-transfer input:focus {
+		box-shadow: none;
 	}
 
 	#smart-transfer input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
