@@ -54,6 +54,13 @@ a:hover {
 	border-radius: 50px;
 	font-weight: bold;
 	color: #792cd1;
+	border: 1px solid #fff;
+	transition: 0.7s ease;
+}
+
+.btn-prim:hover {
+	background-color: rgba(255,255,255, 0.6);
+	color: #792cd1;
 }
 
 .btn{
@@ -114,6 +121,32 @@ header{
 }
 
 .logo .bold{
+}
+
+.twitter-name {
+	position: fixed;
+	display: block;
+	right: 30px;
+	top: 30px;
+	color: #fff;
+	opacity: 0.8;
+}
+
+.twitter-name:hover {
+	color: #fff;
+	opacity: 0.4;
+	transition: 0.7s ease;
+}
+
+.bottom-text {
+	position: absolute;
+	display: block;
+	z-index: 9999;
+	right: 30px;
+	bottom: 30px;
+	color: #fff;
+	opacity: 0.3;
+	font-size: 15px;
 }
 
 .button{
@@ -263,8 +296,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#792cd1', end
 }
 
 @media only screen and (max-width: 780px) {
-	.heading-visual img {
 
+	.bottom-text {
+		padding: 0 20px;
 	}
 }
 
@@ -360,6 +394,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#792cd1', end
 
 	#myModal .close {
 		margin: 20px;
+		transition: 0.7s ease;
 	}
 
 	.modal-open .modal {
