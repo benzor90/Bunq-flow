@@ -16,7 +16,6 @@ body{
 }
 
 h1{
-	/*font-size: 60px;*/
 	font-weight: normal;
 }
 
@@ -245,15 +244,13 @@ header{
 }
 
 /* Slider styling */
-
 .wrapper {
 	width: 100%;
 	height: 100vh;
 	overflow: hidden;
 	position: relative;
-	    background-color: #e13030;
-/*	background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/55/Large_breaking_wave.jpg');
-*/	background-size: cover;
+	background-color: #e13030;
+	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
 }
@@ -271,11 +268,11 @@ header{
 	left:0;
 	top: 0;
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#792cd1+0,7b24aa+100 */
-background: #792cd1; /* Old browsers */
-background: -moz-linear-gradient(-45deg, #792cd1 0%, #7b24aa 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(-45deg, #792cd1 0%,#7b24aa 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(135deg, #792cd1 0%,#7b24aa 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#792cd1', endColorstr='#7b24aa',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	background: #792cd1; /* Old browsers */
+	background: -moz-linear-gradient(-45deg, #792cd1 0%, #7b24aa 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg, #792cd1 0%,#7b24aa 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg, #792cd1 0%,#7b24aa 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#792cd1', endColorstr='#7b24aa',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 	z-index: 3;
 }
 
@@ -370,25 +367,85 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#792cd1', end
 	}
 }
 
-@media only screen and (max-width: 620px) {
+@media only screen and (max-width: 650px) {
 	.caption {
-		    position: absolute;
-		    width: 100%;
-		    text-align: center;
-		    color: white;
-		    z-index: 5;
-		    top: 25% !important;
-		    padding: 0;
-		    left: auto;
-		    transform: none;
+	    position: absolute;
+	    width: 100%;
+	    text-align: center;
+	    color: white;
+	    z-index: 5;
+	    top: 25% !important;
+	    padding: 0;
+	    left: auto;
+	    transform: none;
+	}
+
+	.caption h1 {
+		margin-bottom: 5px;
 	}
 
 	.caption p {
+		line-height: 30px;
+		font-size: 17px;
 		padding: 0 20px;
+		margin-bottom: 30px;
+
+
 	}
 
+	.heading-visual img {
+    	width: 200px;
+    	margin-bottom: -120px;
+     	margin-right: 0; 
+	}
+
+
+
+	.heading-visual {
+	    position: absolute;
+	    color: white;
+	    z-index: 5;
+	    left: 50%;
+	    right: auto;
+	    text-align: center;
+	    top: auto; 
+	    bottom: 0px;
+	    transform: translateX(-50%);
+	}
+
+	.bottom-text {
+	    opacity: 0.7;
+	    border-radius: 5px;
+	    background: purple;
+	    right: 5px;
+	    left: 5px;
+	    text-align: center;
+	    bottom: 5px;
+	}
+
+}
+
+@media (max-height: 500px){
 	.heading-visual {
 		display: none;
+	}
+
+	.caption {
+	    position: absolute;
+	    width: 100%;
+	    text-align: center;
+	    color: white;
+	    z-index: 5;
+	    top: 24% !important;
+	    padding: 0;
+	    left: 0%;
+	    transform: none;
+	}
+}
+
+@media only screen and (max-width: 550px) {
+	.caption {
+		top: 14% !important;
 	}
 }
 
@@ -420,6 +477,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#792cd1', end
 
 	#smart-transfer {
 		color :#fff;
+		padding: 0 40px;
 	}
 
 	#smart-transfer h1 {
@@ -436,12 +494,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#792cd1', end
 
 	.form-group .amount{
 		position: relative;
-	}
-
-	.form-group .amount:after {
-		
-		position: absolute;
-    	content: '&euro;';
 	}
 
 	#smart-transfer .amount{
@@ -535,17 +587,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#792cd1', end
 	#smart-transfer .custom {
 	  overflow: visible;
 	}
-	/*#smart-transfer .overflow .custom select {
-	  outline: 2px dotted rgba(255, 255, 0, 0.5);
-	}*/
-
-
-	
-
-
-
-
-
 
 .arrow-box{
 	height: 40px;
@@ -583,7 +624,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#792cd1', end
 }
 
 /* About */
-
 .about{
 	background-color: white;
 	padding: 60px 30px;
@@ -617,7 +657,6 @@ p{
 }
 
 /* Half section */
-
 .columns{
 	overflow: hidden;
 }
@@ -627,7 +666,6 @@ p{
 	float: left;
 	box-sizing: border-box;
 	padding: 60px;
-	/*background-color: rgba(0,100,100,1);*/
 	background-color: #f28825;
 	color: white;
 	text-align: left;
@@ -660,7 +698,6 @@ p{
 }
 
 /* Services */
-
 .services{
 	position: relative;
 	overflow: auto;
@@ -749,13 +786,10 @@ p{
 	margin: 60px auto 0;
 }
 
-/* Work With Us */
-
+/* Work */
 .work{
 	padding: 60px 30px;
 	background-image: url('../img/background-color.png');
-	/*background-repeat: no-repeat;
-	background-size: cover;*/
 	position: relative;
 	z-index: 1;
 }
@@ -768,7 +802,6 @@ p{
 	width: 100%;
 	top: 0;
 	left: 0;
-	/*background-color: rgba(0,100,100,.8);*/
 }
 
 .work .content{
@@ -794,7 +827,6 @@ p{
 }
 
 /*Footer*/
-
 footer{
 	padding: 30px;
 	text-align: center;
@@ -831,7 +863,6 @@ footer .logo .light{
 }
 
 /* Animations */
-
 @keyframes bounce{
 	0%{
 		transform: translateY(0);
@@ -897,7 +928,6 @@ footer .logo .light{
 }
 
 /* mobile styling */
-
 @media screen and (max-width: 800px) {
 	.wrapper iframe{
 		display: none;
